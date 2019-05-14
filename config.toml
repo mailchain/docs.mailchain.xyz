@@ -1,0 +1,10 @@
+baseURL = "https://mailchain.xyz/"
+languageCode = "en-us"
+title = "Mailchain"
+copyright = "Made with ❤️ by Mailchain contributors."
+theme = "hugo-apex-theme"
+pygmentsCodeFences = true
+pygmentsStyle = "dracula"
+
+[params]
+logo = "https://mailchain.xyz/inbox/favicon.ico"
