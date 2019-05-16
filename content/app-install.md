@@ -11,7 +11,7 @@ Installing Mailchain is fast and easy.
 To install the application, run:
 
 ```sh
-curl -sL https://run.mailchain.xyz/install | sh
+curl -sL https://run.mailchain.xyz/install.sh | sh
 ```
 
 Alternatively, you can download the application directly via the [Mailchain releases](https://github.com/mailchain/mailchain/releases/latest) page.
