@@ -13,6 +13,6 @@ deploy:
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
   local_dir: public
-  repo: mailchain/mailchain.github.io
+  repo: mailchain.github.io
   on:
     branch: master      
