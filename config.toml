@@ -7,4 +7,5 @@ pygmentsCodeFences = true
 pygmentsStyle = "dracula"
 
 [params]
-logo = "https://mailchain.xyz/inbox/favicon.ico"
+logo = "https://mailchain.xyz/images/app-logo-512.png"
+ghdocsrepo = "https://github.com/mailchain/docs.mailchain.xyz/tree/master"
