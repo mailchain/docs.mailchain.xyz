@@ -20,7 +20,7 @@ In each case the URL is supplied when [initializing](/app-init) the Mailchain ap
 
 ## Amazon S3
 
-Mailchain will support multiple sent storage options. Currently Amazon S3 is the only supported storage. Amazon S3 can be configure either through the console, via the CLI, or with CloudFormation. We recommend using CloudFormation, to make this easier we have supplied a [template](https://github.com/mailchain/sent-storage-s3) you can run in your account. The easiest way to create this resource if by clicking on the launch stack icon below.
+Mailchain will support multiple sent storage options. Currently Amazon S3 is the only supported storage. Amazon S3 can be configure either through the console, via the CLI, or with CloudFormation. We recommend using CloudFormation, to make this easier we have supplied a [template](https://github.com/mailchain/sent-storage-s3) you can run in your account. The easiest way to create this resource is by clicking on the launch stack icon below.
 
 [![Launch Stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=mailchain-sent-storage&templateURL=https://s3.amazonaws.com/mailchain-sent-storage-s3-cloudformation-template/output.yaml)
 
