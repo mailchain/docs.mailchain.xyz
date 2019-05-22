@@ -1,10 +1,12 @@
 ---
 title: Initialize
-weight: 4
+weight: 5
 menu: true
 ---
 
 When using Mailchain for the first time you need to initialize the application.
+
+> **ATTENTION**: Ensure that you have setup the [prerequisites](/app-prerequisites) to run Mailchain.
 
 Simply run:
 
