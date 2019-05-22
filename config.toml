@@ -1,5 +1,5 @@
 baseURL = "https://docs.mailchain.xyz/"
-languageCode = "en-us"
+LanguageCode = "en-us"
 title = "Mailchain"
 copyright = "Made with ❤️ by Mailchain contributors."
 theme = "hugo-apex-theme"
@@ -9,3 +9,6 @@ pygmentsStyle = "dracula"
 [params]
 logo = "https://mailchain.xyz/images/app-logo-512.png"
 ghdocsrepo = "https://github.com/mailchain/docs.mailchain.xyz/tree/master"
+name = "Mailchain"
+description = "Email-like messaging for blockchain accounts and public addresses"
+twitter = "mailchain_xyz"
