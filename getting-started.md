@@ -109,5 +109,17 @@ _Mailchain stores your private key in an encrypted format, a passphrase is requi
 You should never expose your private keys to an entity you don't trust. Mailchain stores your private key locally, in an encrypted format. Your private keys are never sent anywhere. They are only used to decrypt messages data, and sign transactions.
 {% endhint %}
 
+## Serve
 
+After you have added the account, you are ready to start the application and serve the api.
+
+To start the application, run:
+
+```bash
+mailchain serve
+```
+
+_When prompted enter the same passphrase as when you added the account._
+
+You are now ready to start sending and receiving mails. Navigate to [https://mailchain.xyz/inbox](https://mailchain.xyz/inbox) to see your mailbox. The Mailchain web interface has all the functionality needed to send and receive messages. It's easy and fun to use.
 
