@@ -65,7 +65,9 @@ We are working to remove the requirement of having to configure Amazon S3 for se
 
 We are working to remove the requirement of having to configure Amazon S3 for sent storage , you can track the progress at [this issue](https://github.com/mailchain/mailchain/issues/119). Subscribe to notifications to track our progress.
 
-> **ATTENTION**: We are working to remove the requirement of having to configure Amazon S3 for sent storage , you can track the progress at [this issue](https://github.com/mailchain/mailchain/issues/119). Subscribe to notifications to track our progress.
+{% hint style="info" %}
+We are working to remove the requirement of having to configure Amazon S3 for sent storage , you can track the progress at [this issue](https://github.com/mailchain/mailchain/issues/119). Subscribe to notifications to track our progress.
+{% endhint %}
 
 You are now ready to [initialize](getting-started.md#initialize) the application.
 
@@ -103,7 +105,7 @@ mailchain account add --chain=ethereum --private-key=[PRIVATE-KEY-VALUE]
 _Mailchain stores your private key in an encrypted format, a passphrase is required._ Enter a non-guessable passphrase, and again to confirm it. You must remember your password to decrypt the key later.
 {% endhint %}
 
-{% hint style="info" %}
+{% hint style="danger" %}
 You should never expose your private keys to an entity you don't trust. Mailchain stores your private key locally, in an encrypted format. Your private keys are never sent anywhere. They are only used to decrypt messages data, and sign transactions.
 {% endhint %}
 
