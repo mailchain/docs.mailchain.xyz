@@ -2,7 +2,7 @@
 
 In this guide, we’ll walk you through how to install Mailchain onto your machine. Then we’ll setup the application to send, then receive messages.
 
-Installing Mailchain is easy. First, you first install the application onto your local machine. Using this application, you’ll can then navigate to the web interface [https://mailchain.xyz/inbox](https://mailchain.xyz/inbox). Finally, you’ll add a private key to send and receive messages.
+Installing Mailchain is easy. First, you first install the application onto your local machine. Using this application, you’ll can then navigate to the web interface [https://inbox.mailchain.xyz](https://inbox.mailchain.xyz). Finally, you’ll add a private key to send and receive messages.
 
 We’ll walk you through this process step by step.
 
@@ -121,5 +121,5 @@ mailchain serve
 
 _When prompted enter the same passphrase as when you added the account._
 
-You are now ready to start sending and receiving mails. Navigate to [https://mailchain.xyz/inbox](https://mailchain.xyz/inbox) to see your mailbox. The Mailchain web interface has all the functionality needed to send and receive messages. It's easy and fun to use.
+You are now ready to start sending and receiving mails. Navigate to [https://inbox.mailchain.xyz](https://inbox.mailchain.xyz) to see your mailbox. The Mailchain web interface has all the functionality needed to send and receive messages. It's easy and fun to use.
 

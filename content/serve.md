@@ -14,4 +14,4 @@ mailchain serve
 
 *When prompted enter the same passphrase as when you added the account.*
 
-You are now ready to start sending and receiving mails. Navigate to [https://mailchain.xyz/inbox](https://mailchain.xyz/inbox) to see your mailbox.
+You are now ready to start sending and receiving mails. Navigate to [https://inbox.mailchain.xyz](https://inbox.mailchain.xyz) to see your mailbox.
