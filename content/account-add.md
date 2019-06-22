@@ -14,7 +14,7 @@ mailchain account add --chain=ethereum --private-key=[PRIVATE-KEY-VALUE]
 - `--private-key` the private key value which should be added. The public key and account will be calculated.
 - `--passphrase` is can be optionally supplied in the command line or at the prompt when the application starts.
 
-*Mailchain stored your private key in an encrypted format, a passphrase is required.* Enter a non-guessable passphrase, and again to confirm it. You must remember your password to decrypt the key later.
+*Mailchain stores your private key in an encrypted format, a passphrase is required.* Enter a non-guessable passphrase, and again to confirm it. You must remember your password to decrypt the key later.
 
 > **ATTENTION**: You should never expose your private keys to an entity you don't trust.
 > Mailchain stores your private key locally, in an encrypted format. Your private keys are never sent anywhere. They are only used to decrypt messages data, and sign transactions.

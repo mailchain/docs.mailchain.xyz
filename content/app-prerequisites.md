@@ -1,12 +1,19 @@
 ---
-title: Prerequisites
+title: Dependencies
 weight: 4
 menu: true
 ---
 
 Mailchain depends on two external resources, an [Ethereum JSON-RPC Endpoint](https://github.com/ethereum/wiki/wiki/JSON-RPC) for sending transactions and [Amazon S3](https://aws.amazon.com/s3/) to store sent messages.
 
-## Ethereum JSON-RPC Endpoint
+## Quick Configuration
+Mailchain works without configuring any 3rd party dependencies. You can simply [initialize](/app-init) the application.
+
+___
+## Advanced Configuration
+Mailchain enables you to choose how you send messages to a blockchain and where those messages are stored. For example, you can use a 3rd party API or your own node to send the message and store them in a location you control.
+
+### Ethereum JSON-RPC Endpoint
 
 A JSON-RPC Endpoint is required to send transactions, a node is required for each network you want to send transactions on. There are different options for getting access to a JSON-RPC endpoint, we recommend using [Infura](https://infura.io/), its a managed service and there is no cost.
 
@@ -18,12 +25,3 @@ In each case the URL is supplied when [initializing](/app-init) the Mailchain ap
 
 > **ATTENTION**: We are working to remove the requirement of having access to a JSON-RPC Endpoint, you can track the progress at [this issue](https://github.com/mailchain/mailchain/issues/120). Subscribe to notifications to track our progress.
 
-## Amazon S3
-
-Mailchain will support multiple sent storage options. Currently Amazon S3 is the only supported storage. Amazon S3 can be configure either through the console, via the CLI, or with CloudFormation. We recommend using CloudFormation, to make this easier we have supplied a [template](https://github.com/mailchain/sent-storage-s3) you can run in your account. The easiest way to create this resource is by clicking on the launch stack icon below.
-
-[![Launch Stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=mailchain-sent-storage&templateURL=https://s3.amazonaws.com/mailchain-sent-storage-s3-cloudformation-template/output.yaml)
-
-> **ATTENTION**: We are working to remove the requirement of having to configure Amazon S3 for sent storage , you can track the progress at [this issue](https://github.com/mailchain/mailchain/issues/119). Subscribe to notifications to track our progress.
-
-You are now ready to [initialize](/app-init) the application.
