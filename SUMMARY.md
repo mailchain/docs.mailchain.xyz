@@ -17,5 +17,4 @@
 ## Troubleshooting
 
 * [Command Line Errors](troubleshooting/troubleshooting.md)
-* [Untitled](troubleshooting/untitled.md)
 
