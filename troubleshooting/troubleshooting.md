@@ -33,6 +33,14 @@ The table below give common reasons for error found in the output of the mailcha
           transaction (even zero value).</p>
       </td>
     </tr>
+    <tr>
+      <td style="text-align:left">ERRO[ {date} ] status 500: Transaction gas price is too low. There is
+        another transaction with same nonce in the queue. Try increasing the gas
+        price or incrementing the nonce.</td>
+      <td style="text-align:left">There is another transaction (or message) waiting to be accepted into
+        a block with the same nonce.
+        <br />Try waiting a few seconds and then trying again.</td>
+    </tr>
   </tbody>
 </table>
 
