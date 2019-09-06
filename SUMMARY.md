@@ -10,13 +10,26 @@
 * [Mailchain Web Interface](mailchain-web-inbox/mailchain-web-interface.md)
 * [Configuring the Web Interface](mailchain-web-inbox/configuring-the-web-interface.md)
 
+## Troubleshooting
+
+* [Command Line Errors](troubleshooting/troubleshooting.md)
+
 ## Advanced Configuration
 
 * [Advanced Storage Configuration](advanced-configuration/advanced-storage-configuration.md)
 * [Advanced Ethereum JSON-RPC Endpoint Configuration](advanced-configuration/advanced-ethereum-json-rpc-endpoint-configuration.md)
 * [Advanced Serve Options](advanced-configuration/advanced-server-options.md)
 
-## Troubleshooting
+## Reference
 
-* [Command Line Errors](troubleshooting/troubleshooting.md)
+* [Ethereum](reference/ethereum.md)
+* [Programmable Envelopes](reference/programmable-envelopes.md)
+* [Types](reference/types.md)
+
+## Concepts
+
+* [Overview](concepts/overview.md)
+* [Send](concepts/send.md)
+* [Receive](concepts/receive.md)
+* [Read](concepts/read.md)
 
