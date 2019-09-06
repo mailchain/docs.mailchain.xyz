@@ -5,6 +5,13 @@
 * [Installation](installation.md)
 * [Setting Up](setting-up.md)
 
+## Concepts
+
+* [Overview](concepts/overview.md)
+* [Send](concepts/send.md)
+* [Receive](concepts/receive.md)
+* [Read](concepts/read.md)
+
 ## Mailchain Web Inbox
 
 * [Mailchain Web Interface](mailchain-web-inbox/mailchain-web-interface.md)
@@ -25,11 +32,4 @@
 * [Ethereum](reference/ethereum.md)
 * [Programmable Envelopes](reference/programmable-envelopes.md)
 * [Types](reference/types.md)
-
-## Concepts
-
-* [Overview](concepts/overview.md)
-* [Send](concepts/send.md)
-* [Receive](concepts/receive.md)
-* [Read](concepts/read.md)
 
