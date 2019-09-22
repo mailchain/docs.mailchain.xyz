@@ -30,6 +30,7 @@
 ## Reference
 
 * [Ethereum](reference/ethereum.md)
+* [Polkadot \(draft\)](reference/polkadot.md)
 * [Programmable Envelopes](reference/programmable-envelopes.md)
 * [Types](reference/types.md)
 
