@@ -4,6 +4,7 @@
 * [Getting Started](getting-started.md)
 * [Installation](installation.md)
 * [Setting Up](setting-up.md)
+* [Upgrading](upgrading.md)
 
 ## Concepts
 
@@ -20,6 +21,7 @@
 ## Troubleshooting
 
 * [Command Line Errors](troubleshooting/troubleshooting.md)
+* [Common Inbox Errors](troubleshooting/common-inbox-errors.md)
 
 ## Advanced Configuration
 

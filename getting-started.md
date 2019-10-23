@@ -1,3 +1,7 @@
+---
+description: Instructions on how to get started with Mailchain
+---
+
 # Getting Started
 
 In this guide, we’ll walk you through how to install Mailchain onto your machine. Then we’ll setup the application to send, then receive messages.
