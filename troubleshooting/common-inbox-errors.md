@@ -30,6 +30,18 @@
         </p>
       </td>
     </tr>
+    <tr>
+      <td style="text-align:left">&quot;Error 500: could not send message: could not send transaction: Insufficient
+        funds. The account you tried to send transaction from does not have enough
+        funds. Required 46528000000000 and got: 0.&quot;</td>
+      <td style="text-align:left">
+        <p>The address you are sending FROM does not have enough balance to pay the
+          gas cost to send a transaction.</p>
+        <p></p>
+        <p>Check that you are sending on the right network and that you have a balance
+          on that account.</p>
+      </td>
+    </tr>
   </tbody>
 </table>
 
