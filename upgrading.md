@@ -10,7 +10,7 @@ To check which version of Mailchain you are running, use the `mailchain version`
 
 ```bash
 $ mailchain version
-Version: v0.0.11
+Version: v0.0.36
 ```
 
 The latest release version can be seen on the [Mailchain releases page on Github](https://github.com/mailchain/mailchain/releases/latest).
@@ -47,7 +47,7 @@ curl -sL https://run.mailchain.xyz/install.sh | sh
 
 To choose where to store the application, you can install mailchain manually.
 
-### 1. Download the latest release
+### Download the latest release
 
 Download the application directly via the [Mailchain releases](https://github.com/mailchain/mailchain/releases/latest) page. Save it to the directory you initially saved mailchain to \(we recommended you save it in your home directory: `~/.mailchain/bin`\).
 
@@ -56,10 +56,8 @@ Download the application directly via the [Mailchain releases](https://github.co
 To check where Mailchain was saved to, run the following command in Terminal:
 
 ```bash
-$PATH
+which mailchain
 ```
-
-Look for the string containing Mailchain, e.g. `...:/Users/username/.mailchain/bin:...`
 
 ## 
 
