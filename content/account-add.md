@@ -7,10 +7,10 @@ menu: true
 To send and receive messages with Mailchain you will need to add an account. To do this you will need your private key.
 
 ```sh
-mailchain account add --chain=ethereum --private-key=[PRIVATE-KEY-VALUE]
+mailchain account add --protocol=ethereum --private-key=[PRIVATE-KEY-VALUE]
 ```
 
-- `--chain` is the chain which the key is added to. Currently supported [ethereum].
+- `--protocol` is the protocol used. Currently supported [ethereum].
 - `--private-key` the private key value which should be added. The public key and account will be calculated.
 - `--passphrase` is can be optionally supplied in the command line or at the prompt when the application starts.
 
