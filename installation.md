@@ -8,7 +8,7 @@ description: Follow the steps below to install Mailchain...
 
 To install Mailchain for the first time, we recommend using [Homebrew](https://brew.sh/) to download, install and manage the application on your local machine.
 
-First we need to tap into mailchain repository to the list of formulae that brew tracks using.
+First we need to tap mailchain repository to the list of formulae that brew tracks using
 
 ```bash
 brew tap mailchain/tap
