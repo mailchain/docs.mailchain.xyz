@@ -14,7 +14,8 @@ First we need to tap mailchain repository to the list of formulae that brew trac
 brew tap mailchain/tap
 ```
 
-Once you have done this, you can install mailchain using 
+Once you have done this, you can install mailchain using
+
 ```bash
 brew install mailchain
 ```

@@ -36,3 +36,7 @@
 * [Programmable Envelopes](reference/programmable-envelopes.md)
 * [Types](reference/types.md)
 
+## Development
+
+* [Sending Testnet Messages](development/sending-testnet-messages.md)
+
