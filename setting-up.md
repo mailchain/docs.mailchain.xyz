@@ -14,7 +14,7 @@ To send and receive messages with Mailchain you will need to add an account. To 
 mailchain account add --chain=ethereum --private-key=[PRIVATE-KEY-VALUE]
 ```
 
-{% hint style="danger" %}
+{% hint style="info" %}
 If you're a developer working in the latest version of `master` branch, you may need to run the following command instead. This is related to a pending release:  
 `mailchain account add --chain=ethereum --private-key=[PRIVATE-KEY-VALUE]`
 {% endhint %}
