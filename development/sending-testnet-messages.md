@@ -59,7 +59,7 @@ _If this is the first message or transaction you are sending on this testnet:_
 
 Click "COMPOSE" in the Inbox interface and send a message to an ethereum address which has already sent a transaction, e.g. the Mailchain Developer address: 0x4ad2b251246aafc2f3bdf3b690de3bf906622c51.
 
-If you have sent a message or transaction on this testnet, you receive messages from other developers, send messages to yourself, either from the same address or another development address.
+If you have sent a message or transaction on this testnet, you can receive messages from other developers, send messages to yourself, either from the same address or another development address.
 
 {% hint style="success" %}
 Top tip: Because Mailchain supports ENS, you can configure an easy, human readable name for your development address on the testnet you are working on. This makes it easier to keep track when switching between different addresses.
