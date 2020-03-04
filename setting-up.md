@@ -11,17 +11,13 @@ description: >-
 To send and receive messages with Mailchain you will need to add an account. To do this you will need a private key for an Ethereum account.
 
 ```bash
-mailchain account add --chain=ethereum --private-key=[PRIVATE-KEY-VALUE]
+mailchain account add --protocol=ethereum --private-key=[PRIVATE-KEY-VALUE] --key-type=[KEY-TYPE]
 ```
-
-{% hint style="danger" %}
-If you're a developer working in the latest version of `master` branch, you may need to run the following command instead. This is related to a pending release:  
-`mailchain account add --chain=ethereum --private-key=[PRIVATE-KEY-VALUE]`
-{% endhint %}
 
 * `--protocol` is the protocol which the key is added to. Currently supported `[ethereum]`.
 * `--private-key` the private key value which should be added. The public key and account will be calculated.
 * `--passphrase` is can be optionally supplied in the command line or at the prompt when the application starts.
+* `--key-type`  includes `secp256k1` \(default for Ethereum\), `ed25519` \(default for Polkadot\), `sr25519` \(Polkadot\)
 
 {% hint style="info" %}
 _Mailchain stores your private key in an encrypted format, a passphrase is required._
