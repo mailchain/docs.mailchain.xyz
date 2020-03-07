@@ -10,9 +10,59 @@ Programmable Envelopes are preferred over adding optional fields. They remove so
 Backwards and forwards compatibility can be achieved by never modifying an envelope after deployment.
 {% endhint %}
 
-### Data Interface
+## Envelopes
 
-Each envelope is required to implement a data interface. It will have different combinations of data fields to return a valid response for each of these methods. This interface is defined as:
+### 0x00 - Reserved for unset value
+
+Zero value is reserved to identify that it has not been set and should be treated like an unset envelope identifier. 
+
+### 0x01 - Private Message Stored with MLI
+
+Is optimized for secure, verifiable messaging with minimal bytes, [URL](programmable-envelopes.md#url) and [ContentsHash](programmable-envelopes.md#contentshash) are encrypted with a publicly verified [IntegrityHash](programmable-envelopes.md#integrityhash). 0x01 uses [MLI](types.md#message-location-identifier) to reduce the bytes needed to store the [URL](programmable-envelopes.md#url), the [IntegrityHash](programmable-envelopes.md#integrityhash) is optional reducing the required number of bytes.
+
+#### Encoding
+
+[Protocol buffers](https://developers.google.com/protocol-buffers/) are used to define the structure of this message. This is the `proto3` spec. 
+
+```text
+// Use hosted location where the decryptedhash is the same as the location. Location, decrypted hash are encrypted so only receipient can location and verify the message.
+message ZeroX01 {
+    bytes UIBEncryptedLocationHash = 1;
+    bytes encryptedHash = 2;
+}
+```
+
+**Fields**
+
+| **Name** | Type | Notes |
+| :--- | :--- | :--- |
+| UIBEncryptedLocationHash | bytes | _Required_ - Bytes are stored are represented with [UInt64Bytes](types.md#uint-64-bytes). |
+| encryptedHash | bytes | _Optional_ - Bytes of hash |
+
+#### 0x50 - Alpha
+
+## Implementation
+
+### Encoding
+
+The first byte will describe the envelope implementation and encoding method used.
+
+| Byte Value | Notes |
+| :--- | :--- |
+| `0x00` | **Reserved** for unset value |
+| `0x01` | [Private message stored with MLI](programmable-envelopes.md#0x01-private-message-stored-with-mli) |
+| `0x50` | [Alpha envelope](programmable-envelopes.md#0x50-alpha) |
+| `0xFF` | **Reserved** to extend beyond 255 envelope definitions |
+
+{% hint style="info" %}
+While [Protocol buffers](https://developers.google.com/protocol-buffers/) are used by the first implemented envelopes, this is not a requirement. Each envelope describes it encoding method in the definition.
+{% endhint %}
+
+### Interface
+
+Each envelope is required to implement the data interface. The interface enables each different envelope to define its implementation of the methods, this allows for different combinations of fields or logic to return a valid response for each of these methods. 
+
+This interface is defined as:
 
 ```go
 type Data interface {
@@ -22,6 +72,8 @@ type Data interface {
 	Valid() error
 }
 ```
+
+### Methods
 
 #### URL
 
@@ -78,51 +130,7 @@ Hash of the decrypted content. This can be used to verify the contents of the me
 | hash | [\[\]byte](https://godoc.org/builtin#byte) | Hash of the contents to validate the message contents. _Nil if error._ |
 | err | error | Error object describing the cause. |
 
-### Encoding
-
-The first byte will describe the envelope implementation and encoding method used.
-
-| Byte Value | Notes |
-| :--- | :--- |
-| `0x00` | **Reserved** for unset value |
-| `0x01` | [Private message stored with MLI](programmable-envelopes.md#0x01-private-message-stored-with-mli) |
-| `0x50` | [Alpha envelope](programmable-envelopes.md#0x50-alpha) |
-| `0xFF` | **Reserved** to extend beyond 255 envelope definitions |
-
-{% hint style="info" %}
-While [Protocol buffers](https://developers.google.com/protocol-buffers/) are used by the first implemented envelopes, this is not a requirement. Each envelope describes it encoding method in the definition.
-{% endhint %}
-
-### Envelopes
-
-#### 0x00 - Reserved for unset value
-
-Zero value is reserved to identify that it has not been set and should be treated like an unset envelope identifier. 
-
-#### 0x01 - Private Message Stored with MLI
-
-Is optimized for secure, verifiable messaging with minimal bytes, [URL](programmable-envelopes.md#url) and [ContentsHash](programmable-envelopes.md#contentshash) are encrypted with a publicly verified [IntegrityHash](programmable-envelopes.md#integrityhash). 0x01 uses [MLI](types.md#message-location-identifier) to reduce the bytes needed to store the [URL](programmable-envelopes.md#url), the [IntegrityHash](programmable-envelopes.md#integrityhash) is optional reducing the required number of bytes.
-
-#### Encoding
-
-[Protocol buffers](https://developers.google.com/protocol-buffers/) are used to define the structure of this message. This is the `proto3` spec. 
-
-```text
-// Use hosted location where the decryptedhash is the same as the location. Location, decrypted hash are encrypted so only receipient can location and verify the message.
-message ZeroX01 {
-    bytes UIBEncryptedLocationHash = 1;
-    bytes encryptedHash = 2;
-}
-```
-
-**Fields**
-
-| **Name** | Type | Notes |
-| :--- | :--- | :--- |
-| UIBEncryptedLocationHash | bytes | _Required_ - Bytes are stored are represented with [UInt64Bytes](types.md#uint-64-bytes). |
-| encryptedHash | bytes | _Optional_ - Bytes of hash |
-
-#### 0x50 - Alpha
+### 
 
 
 
