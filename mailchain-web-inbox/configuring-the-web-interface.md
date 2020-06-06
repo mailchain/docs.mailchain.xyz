@@ -8,7 +8,7 @@ To change between different networks, click the 'change' link in the top right o
 
 Selecting a network from the dropdown will change the network and refresh the inbox.
 
-![Mailchain Network Settings](../.gitbook/assets/image%20%286%29.png)
+![Mailchain Network Settings](../.gitbook/assets/image%20%286%29%20%281%29.png)
 
 Click 'Close' when you are finished.
 
@@ -20,11 +20,11 @@ See Advanced Configuration &gt; [Advanced Serve Options](../advanced-configurati
 
 To change how the Mailchain web interface interacts with your mailchain application, you can update the Server Settings in the top right of the inbox.
 
-![Accessing the Server Settings](../.gitbook/assets/image%20%281%29.png)
+![Accessing the Server Settings](../.gitbook/assets/image%20%283%29.png)
 
 Update any of the settings as needed to communicate with the mailchain application and click 'Save' when finished.
 
-![Server Settings](../.gitbook/assets/image%20%284%29.png)
+![Server Settings](../.gitbook/assets/image%20%284%29%20%281%29.png)
 
 | Setting | Description | Default |
 | :--- | :--- | :--- |

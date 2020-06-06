@@ -40,3 +40,7 @@
 
 * [Sending Testnet Messages](development/sending-testnet-messages.md)
 
+## Mailchain Connectors
+
+* [Mailchain Connector for IMAP](mailchain-connectors/mailchain-connector-imap.md)
+
