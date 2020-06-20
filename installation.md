@@ -47,7 +47,8 @@ Once Scoop is installed, run the following command to download and install the a
 scoop install git
 scoop bucket add mailchain https://github.com/mailchain/scoop-bucket.git
 scoop install mailchain
-New-Item -ItemType "file" -Path "$home\.mailchain\.mailchain.yaml" -Force
+
+$path = "$home\.mailchain\.mailchain.yaml"; If(!(test-path $path)) { New-Item -ItemType "file" -Force -Path $path }
 ```
 
 ## Manual Install
