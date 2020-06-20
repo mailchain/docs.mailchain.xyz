@@ -39,7 +39,7 @@ Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 iwr -useb get.scoop.sh | iex
 ```
 
-**Installer:**
+**Install:**
 
 Once Scoop is installed, run the following command to download and install the application on your local machine.
 
@@ -47,7 +47,7 @@ Once Scoop is installed, run the following command to download and install the a
 scoop install git
 scoop bucket add mailchain https://github.com/mailchain/scoop-bucket.git
 scoop install mailchain
-New-Item -ItemType "file" -Path "$home\.mailchain\.mailchain.yaml"
+New-Item -ItemType "file" -Path "$home\.mailchain\.mailchain.yaml" -Force
 ```
 
 ## Manual Install
