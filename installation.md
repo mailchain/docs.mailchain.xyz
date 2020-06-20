@@ -20,12 +20,34 @@ Once you have done this, you can install mailchain using
 brew install mailchain
 ```
 
-## Quick Install \(Linux and Windows\)
+## Quick Install \(Linux\)
 
 To install Mailchain for the first time, run the following command to download and install the application on your local machine.
 
 ```bash
 curl -sL https://run.mailchain.xyz/install.sh | sh
+```
+
+## Quick Install \(Windows\)
+
+**Prerequisites:**
+
+To install Mailchain for the first time, you need to install [Scoop.sh](https://scoop.sh/). To do this, open Powershell and run:
+
+```bash
+Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+iwr -useb get.scoop.sh | iex
+```
+
+**Installer:**
+
+Once Scoop is installed, run the following command to download and install the application on your local machine.
+
+```bash
+scoop install git
+scoop bucket add mailchain https://github.com/mailchain/scoop-bucket.git
+scoop install mailchain
+New-Item -ItemType "file" -Path "$home\.mailchain\.mailchain.yaml"
 ```
 
 ## Manual Install
