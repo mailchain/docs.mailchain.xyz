@@ -18,7 +18,7 @@ Zero value is reserved to identify that it has not been set and should be treate
 
 ### 0x01 - Private Message Stored with MLI
 
-Is optimized for secure, verifiable messaging with minimal bytes, [URL](programmable-envelopes.md#url) and [ContentsHash](programmable-envelopes.md#contentshash) are encrypted with a publicly verified [IntegrityHash](programmable-envelopes.md#integrityhash). 0x01 uses [MLI](types.md#message-location-identifier) to reduce the bytes needed to store the [URL](programmable-envelopes.md#url), the [IntegrityHash](programmable-envelopes.md#integrityhash) is optional reducing the required number of bytes.
+The Private Message Stored with MLI \(Message Location Identifier\) is optimized for secure, verifiable messaging with minimal bytes, [URL](programmable-envelopes.md#url) and [ContentsHash](programmable-envelopes.md#contentshash) are encrypted with a publicly verified [IntegrityHash](programmable-envelopes.md#integrityhash). 0x01 uses [MLI](types.md#message-location-identifier) to reduce the bytes needed to store the [URL](programmable-envelopes.md#url), the [IntegrityHash](programmable-envelopes.md#integrityhash) is optional reducing the required number of bytes.
 
 #### Encoding
 
@@ -38,6 +38,29 @@ message ZeroX01 {
 | :--- | :--- | :--- |
 | UIBEncryptedLocationHash | bytes | _Required_ - Bytes are stored are represented with [UInt64Bytes](types.md#uint-64-bytes). |
 | encryptedHash | bytes | _Optional_ - Bytes of hash |
+
+### 0x02 - Private Message Stored on IPFS
+
+The Private Message Stored on [IPFS](https://ipfs.io/) \(InterPlanetary File System\) is optimized for secure, verifiable messaging with minimal bytes, [URL](programmable-envelopes.md#url) and [IntegrityHash](programmable-envelopes.md#integrityhash) are encrypted with a verified [ContentsHash](programmable-envelopes.md#contentshash). 0x02 uses an `ipfs://` URL, the [ContentsHash](programmable-envelopes.md#contentshash) is required.
+
+#### Encoding
+
+[Protocol buffers](https://developers.google.com/protocol-buffers/) are used to define the structure of this message. This is the `proto3` spec. 
+
+```text
+// Use hosted location where the encrypted hash is the same as the location. Location and decrypted hash are encrypted so only receipient can location and verify the message.
+message ZeroX02 {
+    bytes UIBEncryptedLocationHash = 1;
+    bytes decryptedHash = 2;
+}
+```
+
+**Fields**
+
+| **Name** | Type | Notes |
+| :--- | :--- | :--- |
+| UIBEncryptedLocationHash | bytes | _Required_ - Bytes are stored are represented with [UInt64Bytes](types.md#uint-64-bytes). |
+| decryptedHash | bytes | _Required_ - Bytes of hash |
 
 #### 0x50 - Alpha
 
