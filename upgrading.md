@@ -2,7 +2,7 @@
 description: Instructions on how to upgrade to the latest version of Mailchain
 ---
 
-# Upgrading
+# Updating
 
 ## What Version of Mailchain Am I Running?
 

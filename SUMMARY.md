@@ -4,7 +4,7 @@
 * [Getting Started](getting-started.md)
 * [Installation](installation.md)
 * [Setting Up](setting-up.md)
-* [Upgrading](upgrading.md)
+* [Updating](upgrading.md)
 
 ## Concepts
 
