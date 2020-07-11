@@ -2,7 +2,7 @@
 
 ### Configuring Mailchain to Use Your Own Sent Storage Location
 
-Mailchain will supports multiple sent storage options:
+Mailchain supports multiple sent storage options:
 
 1. \*\*\*\*[**Mailchain**](advanced-storage-configuration.md#mailchain) \(encrypted sent store, managed by Mailchain on Amazon S3\)
 2. \*\*\*\*[**Amazon S3**](advanced-storage-configuration.md#amazon-s3) \(encrypted sent store, in your own Amazon S3 account\)
