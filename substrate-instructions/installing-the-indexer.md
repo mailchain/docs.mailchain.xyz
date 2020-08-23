@@ -12,14 +12,13 @@ You need to have already installed:
 
 #### Installation and Setup
 
-To obtain the latest docker container download the docker-compose file from the Mailchain repository: [https://github.com/mailchain/mailchain/blob/master/docker-compose.substrate.yml](https://github.com/mailchain/mailchain/blob/master/docker-compose.substrate.yml). Save this file in your preferred location for docker-compose files.
+To obtain the latest docker container download the docker-compose file from the Mailchain repository: [https://github.com/mailchain/mailchain/blob/master/docker-compose.substrate.yml](https://github.com/mailchain/mailchain/blob/master/docker-compose.substrate.yml). Save the [raw file](https://raw.githubusercontent.com/mailchain/mailchain/master/docker-compose.substrate.yml) in your preferred location for docker-compose files.
 
 For this example the container file is stored as `~/docker/mailchain/docker-compose.substrate.yml`using the command:
 
 ```text
 mkdir ~/docker/mailchain
-cd ~/docker/mailchain
-wget https://github.com/mailchain/mailchain/blob/master/docker-compose.substrate.yml
+curl https://raw.githubusercontent.com/mailchain/mailchain/master/docker-compose.substrate.yml >> ~/docker/mailchain/docker-compose.substrate.yml
 ```
 
 Next, open the file in your editor and update any default values \(e.g. network, ports or passwords\). For this example, we will keep the default Edgeware Mainnet configuration.
