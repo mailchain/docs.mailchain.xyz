@@ -18,7 +18,8 @@ For this example the container file is stored as `~/docker/mailchain/docker-comp
 
 ```text
 mkdir ~/docker/mailchain
-wget https://github.com/mailchain/mailchain/blob/master/docker-compose.substrate.yml ~/docker/mailchain/docker-compose.substrate.yml
+cd ~/docker/mailchain
+wget https://github.com/mailchain/mailchain/blob/master/docker-compose.substrate.yml
 ```
 
 Next, open the file in your editor and update any default values \(e.g. network, ports or passwords\). For this example, we will keep the default Edgeware Mainnet configuration.
