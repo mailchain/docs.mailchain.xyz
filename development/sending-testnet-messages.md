@@ -2,7 +2,7 @@
 description: How to get started sending a Mailchain test message on a testnet
 ---
 
-# Sending Testnet Messages
+# Sending Ethereum Testnet Messages
 
 ### Ethereum Testnets
 
@@ -43,7 +43,7 @@ Follow the docs at [Getting Started](../getting-started.md) and add your private
 
 #### 4. Load Your Mailchain Inbox
 
-With your Mailchain [client running locally](../setting-up.md#serve), head to the Mailchain Inbox \([https://inbox.mailchain.xyz](https://inbox.mailchain.xyz)\).
+With your Mailchain [client running locally](../advanced-configuration/setting-up.md#serve), head to the Mailchain Inbox \([https://inbox.mailchain.xyz](https://inbox.mailchain.xyz)\).
 
 #### 5. Switch To A Testnet
 

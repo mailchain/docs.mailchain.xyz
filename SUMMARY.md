@@ -3,8 +3,15 @@
 * [Introduction](README.md)
 * [Getting Started](getting-started.md)
 * [Installation](installation.md)
-* [Setting Up](setting-up.md)
-* [Updating](upgrading.md)
+* [Ethereum Instructions](ethereum-instructions/README.md)
+  * [Setting Up](ethereum-instructions/setting-up.md)
+* [Substrate Instructions](substrate-instructions/README.md)
+  * [Setting Up](substrate-instructions/setting-up.md)
+  * [Installing the Indexer](substrate-instructions/installing-the-indexer.md)
+  * [Starting and Stopping the Indexer](substrate-instructions/starting-and-stopping-the-indexer.md)
+  * [Updating the Indexer](substrate-instructions/updating-the-indexer.md)
+* [Running the Application](running-the-application.md)
+* [Updating Mailchain](upgrading.md)
 
 ## Concepts
 
@@ -27,18 +34,20 @@
 
 * [Advanced Storage Configuration](advanced-configuration/advanced-storage-configuration.md)
 * [Advanced Ethereum JSON-RPC Endpoint Configuration](advanced-configuration/advanced-ethereum-json-rpc-endpoint-configuration.md)
+* [Advanced Set Up](advanced-configuration/setting-up.md)
 * [Advanced Serve Options](advanced-configuration/advanced-server-options.md)
 
 ## Reference
 
 * [Ethereum](reference/ethereum.md)
-* [Polkadot / Substrate \(draft\)](reference/polkadot.md)
+* [Substrate \(Polkadot\)](reference/polkadot/README.md)
+  * [Substrate Transaction Indexer](reference/polkadot/substrate-transaction-indexer.md)
 * [Programmable Envelopes](reference/programmable-envelopes.md)
 * [Types](reference/types.md)
 
 ## Development
 
-* [Sending Testnet Messages](development/sending-testnet-messages.md)
+* [Sending Ethereum Testnet Messages](development/sending-testnet-messages.md)
 
 ## Mailchain Connectors
 

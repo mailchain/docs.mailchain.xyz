@@ -96,5 +96,5 @@ $ echo $SHELL
 | /bin/bash | `echo 'export PATH=$PATH:$HOME/.mailchain/bin' >> ~/.bashrc` |
 | /bin/ksh | `echo 'export PATH=$PATH:$HOME/.mailchain/bin' >> ~/.kshrc` |
 
-You are now ready to [initialize](setting-up.md) the application.
+You are now ready to initialise the application, following the appropriate instructions for [Ethereum](ethereum-instructions/) or [Substrate](substrate-instructions/).
 
