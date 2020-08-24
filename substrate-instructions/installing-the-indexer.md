@@ -17,7 +17,7 @@ To obtain the latest docker container download the docker-compose file from the 
 For this example the container file is stored as `~/docker/mailchain/docker-compose.substrate.yml`using the command:
 
 ```text
-mkdir ~/docker/mailchain
+mkdir -p ~/docker/mailchain
 curl https://raw.githubusercontent.com/mailchain/mailchain/master/docker-compose.substrate.yml >> ~/docker/mailchain/docker-compose.substrate.yml
 ```
 

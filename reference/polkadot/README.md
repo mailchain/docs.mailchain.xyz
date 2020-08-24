@@ -1,7 +1,3 @@
----
-description: This page is currently a draft spec. Please don't use yet.
----
-
 # Substrate \(Polkadot\)
 
 Mailchain users can send messages to any Substrate account address. This section details how the Substrate implementation of the [Message Flow](../../concepts/overview.md) is achieved.
