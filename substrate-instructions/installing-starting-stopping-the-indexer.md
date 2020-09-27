@@ -12,6 +12,7 @@ Clone the Mailchain repository to your `.mailchain/mailchain` folder:
 
 ```text
 git clone https://github.com/mailchain/mailchain.git ~/.mailchain/mailchain
+cd ~/.mailchain/mailchain
 ```
 
 ### Starting the Indexer
@@ -20,11 +21,11 @@ The indexer is preconfigured for 3 networks:
 
 | Network | Command |
 | :--- | :--- |
-| Edgeware Mainnet | `make ~/.mailchain/mailchain/edgeware-mainnet` |
-| Edgeware Testnet \(beresheet\) | `make ~/.mailchain/mailchain/edgeware-beresheet` |
-| Edgeware Local \(development\) | `make ~/.mailchain/mailchain/edgeware-local` |
+| Edgeware Mainnet | `make edgeware-mainnet` |
+| Edgeware Testnet \(beresheet\) | `make edgeware-beresheet` |
+| Edgeware Local \(development\) | `make edgeware-local` |
 
-Select the network and run the appropriate make command \(e.g. `make ~/.mailchain/mailchain/edgeware-mainnet`\). This will download or update the required docker containers.
+Select the network and run the appropriate make command \(e.g. `make edgeware-mainnet`\). This will download or update the required docker containers.
 
 NOTE: If working in local mode, you can access the preconfigured development accounts [here](https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/accounts) if you need to transfer a balance to accounts you configured in [Setting Up &gt; Add Account](../ethereum-instructions/setting-up.md#add-account).
 
