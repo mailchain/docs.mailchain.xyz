@@ -8,7 +8,6 @@
 * [Substrate Instructions](substrate-instructions/README.md)
   * [Setting Up](substrate-instructions/setting-up.md)
   * [Installing, Starting & Stopping The Indexer](substrate-instructions/installing-starting-stopping-the-indexer.md)
-  * [Updating The Indexer](substrate-instructions/updating-the-indexer.md)
 * [Running the Application](running-the-application.md)
 * [Updating Mailchain](upgrading.md)
 
