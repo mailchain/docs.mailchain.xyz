@@ -7,9 +7,8 @@
   * [Setting Up](ethereum-instructions/setting-up.md)
 * [Substrate Instructions](substrate-instructions/README.md)
   * [Setting Up](substrate-instructions/setting-up.md)
-  * [Installing the Indexer](substrate-instructions/installing-the-indexer.md)
-  * [Starting and Stopping the Indexer](substrate-instructions/starting-and-stopping-the-indexer.md)
-  * [Updating the Indexer](substrate-instructions/updating-the-indexer.md)
+  * [Installing, Starting & Stopping The Indexer](substrate-instructions/installing-starting-stopping-the-indexer.md)
+  * [Updating The Indexer](substrate-instructions/updating-the-indexer.md)
 * [Running the Application](running-the-application.md)
 * [Updating Mailchain](upgrading.md)
 

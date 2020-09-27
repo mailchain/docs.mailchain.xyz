@@ -1,4 +1,4 @@
-# Updating the Indexer
+# Updating The Indexer
 
 To check and get the latest version of the Substrate docker images, head to [https://github.com/mailchain/mailchain/releases](https://github.com/mailchain/mailchain/releases) and check the latest version available where the commands for the latest version of the image and the specific version of the image are listed.
 
