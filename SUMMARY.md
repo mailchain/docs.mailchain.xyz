@@ -30,6 +30,7 @@
 
 ## Advanced Configuration
 
+* [Mailchain Settings: Viewing and Updating](advanced-configuration/mailchain-settings-viewing-and-updating.md)
 * [Advanced Storage Configuration](advanced-configuration/advanced-storage-configuration.md)
 * [Advanced Ethereum JSON-RPC Endpoint Configuration](advanced-configuration/advanced-ethereum-json-rpc-endpoint-configuration.md)
 * [Advanced Set Up](advanced-configuration/setting-up.md)

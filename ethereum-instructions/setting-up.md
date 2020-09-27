@@ -30,3 +30,13 @@ You should never expose your private keys to an entity you don't trust.
 Mailchain stores your private key locally, in an encrypted format. Your private keys are never sent anywhere. They are only used to decrypt messages data, and sign transactions.
 {% endhint %}
 
+## Mailchain Settings
+
+By default, Mailchain comes preconfigured with some default values to make it easier to get started. Etherscan is configured by default, but Etherscan recently made it a requirement to use an API key to access the API.
+
+To obtain an API key, follow the instructions here: [https://etherscan.io/apis](https://etherscan.io/apis).
+
+To add the API key to the Mailchain Client, follow the instructions here: [Mailchain Settings: Viewing and Updating](../advanced-configuration/mailchain-settings-viewing-and-updating.md)
+
+
+
