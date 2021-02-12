@@ -43,7 +43,7 @@ Contract transactions \(signed calls\) contain a `data` field that stores the [e
 
 TODO
 
-An example of transaction data for a Mailchain message sent on \[INSERT TESTNET HERE\] is as follows:
+An example of transaction data for a Mailchain message sent on Edgeware is as follows:
 
 ```
 ?????

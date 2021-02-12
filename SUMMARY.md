@@ -38,6 +38,7 @@
 
 ## Reference
 
+* [Algorand \(under development\)](reference/algorand.md)
 * [Ethereum](reference/ethereum.md)
 * [Substrate \(Polkadot\)](reference/polkadot/README.md)
   * [Substrate Transaction Indexer](reference/polkadot/substrate-transaction-indexer.md)

@@ -61,5 +61,5 @@ Once the transaction fields have been populated, it must be signed using the sen
 
 ### Receiver
 
-To [read](../concepts/read.md) Mailchain messages for a specific address, transactions sent to that address need to be identified. Ethereum does not natively support an address index or similar functionality that identifies all transactions sent to or from an specific address. Third parties have API's that provide this functionality, including [Etherscan.io](https://etherscan.io/).
+To [read](../concepts/read.md) Mailchain messages for a specific address, transactions sent to that address need to be identified. Ethereum does not natively support an address index or similar functionality that identifies all transactions sent to or from a specific address. Third parties have API's that provide this functionality, including [Etherscan.io](https://etherscan.io/).
 

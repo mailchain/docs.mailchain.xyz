@@ -72,13 +72,13 @@ To transmit the message to the recipient, a transaction is sent from the message
 
 The following fields are then encoded to build the transaction data:
 
-| Field | Description | Example |
+| Field | Description | Example using Hex Encoding |
 | :--- | :--- | :--- |
 | protocol-prefix | _Optional and varies per protocol_ | `0x` for Ethereum |
 | mailchain-identifier | "mailchain" encoded | `6d61696c636861696e` hex encoded |
 | envelope | Bytes of envelope |  |
 
-The data is combined as `[protocol-prefix]+[mailchain-prefix]+[envelope]`
+The data is combined as `[protocol-prefix]+[mailchain-prefix]+[envelope]`and encoded according to the preferred protocol encoding standard \(e.g. hex, base32, base58, etc.\).
 
 To send the transaction, the remaining transaction fields need to be supplied, before it is signed and transmitted as per the protocol requirements.[  
 ](https://app.gitbook.com/@mailchain/s/mailchain/~/drafts/-LmkujL2pCds-laZEl8b/primary/reference/ethereum)
