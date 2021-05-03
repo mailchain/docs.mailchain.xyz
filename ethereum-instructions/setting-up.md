@@ -11,10 +11,11 @@ description: >-
 To send and receive messages with Mailchain on Ethereum, you will need to add an existing account \(or create a new one and save the private key\).
 
 ```bash
-mailchain account add --protocol=ethereum --private-key=[PRIVATE-KEY-VALUE] --key-type=secp256k1
+mailchain account add --protocol=ethereum --network=mainnet --private-key=[PRIVATE-KEY-VALUE] --key-type=secp256k1
 ```
 
 * `--protocol=ethereum`
+* `--network=mainnet`  or a testnet you are working on.
 * `--private-key`of your account to be able to sign and decrypt messages.
 * `--key-type=secp256k1` \(for Ethereum\).
 
