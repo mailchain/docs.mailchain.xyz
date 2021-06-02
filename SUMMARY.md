@@ -5,6 +5,8 @@
 * [Installation](installation.md)
 * [Ethereum Instructions](ethereum-instructions/README.md)
   * [Setting Up](ethereum-instructions/setting-up.md)
+* [Algorand](algorand/README.md)
+  * [Setting Up](algorand/setting-up.md)
 * [Substrate Instructions](substrate-instructions/README.md)
   * [Setting Up](substrate-instructions/setting-up.md)
   * [Installing, Starting & Stopping The Indexer](substrate-instructions/installing-starting-stopping-the-indexer.md)
