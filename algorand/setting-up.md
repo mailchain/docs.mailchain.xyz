@@ -4,20 +4,10 @@
 
 To send and receive messages with Mailchain on Algorand, you will need to add an existing account \(or create a new one and save the 25 word mnemonic phrase\).
 
-
-
 ```text
 mailchain account add --protocol=algorand --network=[NETWORK] --private-key-encoding=mnemonic/algorand --private-key=[PRIVATE-MNEMONIC-STRING-VALUE] --key-type=ed25519
 ```
 
-**\`\`\`**  
-
-
-```bash
-mailchain account add --protocol=algorand --network=mainnet --private-key-encoding=mnemonic/algorand --private-key=[PRIVATE-KEY-VALUE] --key-type=mailchain account add --protocol=algorand --network=mainnet --private-key-encoding=mnemonic/algorand --private-key=[PRIVATE-KEY-VALUE] --key-type=ed25519
-```
-
-* `--protocol=algorand`
 * `--network=mainnet`  or a testnet you are working on.
 * `--private-key-encoding=mnemonic/algorand` is the encoding used for supplied private key
 * `--private-key` is the 25 word mnemonic phrase of your account to be able to sign and decrypt messages.
