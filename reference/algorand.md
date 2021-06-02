@@ -1,4 +1,4 @@
-# Algorand \(under development\)
+# Algorand
 
 Mailchain users can send messages to any Algorand account address. This section details how the Algorand implementation of the [Message Flow](../concepts/overview.md) is achieved.
 
@@ -8,13 +8,13 @@ Mailchain supports all the public Algorand networks
 
 | Network | Status |
 | :--- | :--- |
-| Mainnet | Pending |
-| BetaNet | Pending |
-| TestNet | Pending |
+| Mainnet | Full |
+| BetaNet | Full |
+| TestNet | Full |
 
 ### Public Key Finder
 
-To send an encrypted message, a public key is required. Mailchain uses the public key associated with an account address to encrypt the data, and if specified by the envelope, the message contents. This ensures the recipient is also the owner of the private key and only they can decrypt data. The public key finder returns the public key for a recipient public address.
+To send an encrypted message, a public key is required. Mailchain uses the public key associated with an account address to encrypt message data, and if specified by the envelope, the message contents too. This ensures the recipient is also the owner of the private key and only they can decrypt data. The public key finder returns the public key for a recipient public address.
 
 {% hint style="info" %}
 The public key for an account address can be calculated from the public address by converting it from its Base32 encoded representation to Base58 and removing the 4-byte checksum.
@@ -53,7 +53,7 @@ Transactions contain a `note` field that stores the [envelope](programmable-enve
     </tr>
     <tr>
       <td style="text-align:left">envelope</td>
-      <td style="text-align:left"><code>AQqCAS7hDFkCTINtfKEkcLWsdGcwAhJ93trbxvxDdajAhrZQBg7eGZ9gOhWLx4hKkD6t+Xot0PvmmsgcIWgw+U5WuEfZJLUafYInyAcUIZ5oIaUbx8upIvKRpHvf/innw/Z62Qj/N3v8wLYDAH6tS/2H/wrMJyUoygPWOB5tDh4sXf0k1SE</code>
+      <td style="text-align:left"><code>AQpuKuI/nZUw6qvRDt+/aAUOqu7J72/CZMc+kPsbVrCTq1MB9JwTVJadZJLB4h07XEon6Yf9ubvaxTTHAltoFjyWipQzyuxFfP1I8Y5OZE4dUFsEheF2jN8DUfKwpQKEKILoySTH6a4VhWwq8R1T3/0SBiIEsORJjw</code>
       </td>
       <td style="text-align:left">Envelope encoded as hexadecimal</td>
     </tr>
@@ -63,10 +63,10 @@ Transactions contain a `note` field that stores the [envelope](programmable-enve
 An example of a transaction `note` field for a Mailchain message sent on Algorand is as follows:
 
 ```text
-bWFpbGNoYWluAQqCAS7hDFkCTINtfKEkcLWsdGcwAhJ93trbxvxDdajAhrZQBg7eGZ9gOhWLx4hKkD6t+Xot0PvmmsgcIWgw+U5WuEfZJLUafYInyAcUIZ5oIaUbx8upIvKRpHvf/innw/Z62Qj/N3v8wLYDAH6tS/2H/wrMJyUoygPWOB5tDh4sXf0k1SE=
+bWFpbGNoYWluAQpuKuI/nZUw6qvRDt+/aAUOqu7J72/CZMc+kPsbVrCTq1MB9JwTVJadZJLB4h07XEon6Yf9ubvaxTTHAltoFjyWipQzyuxFfP1I8Y5OZE4dUFsEheF2jN8DUfKwpQKEKILoySTH6a4VhWwq8R1T3/0SBiIEsORJjw==
 ```
 
-The same transaction and data can be viewed [here](https://testnet.algoexplorer.io/tx/WWUA7W2J2MFGY3RAXJS33DANDK7WY4MBPD3DKH7CY34IDHPXXUUQ) on [Algoexplorer](https://algoexplorer.io/).
+The same transaction and data can be viewed [here](https://testnet.algoexplorer.io/tx/YA6BWUPKZGT237Y7MTDJHEKOZKRAQPTF7YY2EENBQGQWU7TWJFVA) on [Algoexplorer](https://algoexplorer.io/).
 
 ####  Transaction Fields
 
@@ -179,7 +179,7 @@ To send a message the following Algorand transaction fields must be specified.
       <td style="text-align:left"><code>note</code>
       </td>
       <td style="text-align:left">[]byte</td>
-      <td style="text-align:left"><code>bWFpbGNoYWluAQqCAS7hDFkCTINtfKEkcLWsdGcwAhJ93trbxvxDdajAhrZQBg7eGZ9gOhWLx4hKkD6t+Xot0PvmmsgcIWgw+U5WuEfZJLUafYInyAcUIZ5oIaUbx8upIvKRpHvf/innw/Z62Qj/N3v8wLYDAH6tS/2H/wrMJyUoygPWOB5tDh4sXf0k1SE=</code>
+      <td style="text-align:left"><code>bWFpbGNoYWluAQpuKuI/nZUw6qvRDt+/aAUOqu7J72/CZMc+kPsbVrCTq1MB9JwTVJadZJLB4h07XEon6Yf9ubvaxTTHAltoFjyWipQzyuxFfP1I8Y5OZE4dUFsEheF2jN8DUfKwpQKEKILoySTH6a4VhWwq8R1T3/0SBiIEsORJjw==</code>
       </td>
       <td style="text-align:left">Envelope data</td>
       <td style="text-align:left"></td>
