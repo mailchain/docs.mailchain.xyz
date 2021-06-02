@@ -41,29 +41,17 @@ Contract transactions \(signed calls\) contain a `data` field that stores the [e
 | mailchain-identifier | `6d61696c636861696e` | "mailchain" encoded as hexadecimal |
 | envelope | `010a82012ee10c59024c836d7ca12470b5ac74673002127ddedadbc6fc4375a8c086b650060ede199f603a158bc7884a903eadf97a2dd0fbe69ac81c216830f94e56b847d924b51a7d8227c80714219e6821a51bc7cba922f291a47bdffe29e7c3f67ad908ff377bfcc0b603007ead4bfd87ff0acc272528ca03d6381e6d0e1e2c5dfd24d521` | Envelope encoded as hexadecimal |
 
-TODO
-
-An example of transaction data for a Mailchain message sent on Edgeware is as follows:
-
-```
-?????
-```
-
-The same transaction and data can be viewed on **here** on Subscan.
-
-/TODO
-
 ####  Transaction/ Extrinsic Fields
 
 To send a message the following transaction fields must be specified.
 
-| Field | Type | Example | Notes |
-| :--- | :--- | :--- | :--- |
-| origin | [AccountId](https://substrate.dev/rustdocs/v1.0/srml_system/trait.Trait.html#associatedtype.AccountId) |  | TODO |
-| dest | [AccountId](https://substrate.dev/rustdocs/v1.0/srml_system/trait.Trait.html#associatedtype.AccountId) |  | TODO |
-| value | [BalanceOf](https://substrate.dev/rustdocs/v1.0/srml_contract/type.BalanceOf.html) |  | TODO |
-| gas\_limit | [Gas](https://substrate.dev/rustdocs/v1.0/srml_contract/trait.Trait.html#associatedtype.Gas) |  | TODO |
-| data | [Vec](https://doc.rust-lang.org/nightly/alloc/vec/struct.Vec.html)&lt;[u8](https://doc.rust-lang.org/nightly/std/primitive.u8.html)&gt; |  | TODO |
+| Field | Type | Example |
+| :--- | :--- | :--- |
+| origin | [AccountId](https://substrate.dev/rustdocs/v1.0/srml_system/trait.Trait.html#associatedtype.AccountId) |  |
+| dest | [AccountId](https://substrate.dev/rustdocs/v1.0/srml_system/trait.Trait.html#associatedtype.AccountId) |  |
+| value | [BalanceOf](https://substrate.dev/rustdocs/v1.0/srml_contract/type.BalanceOf.html) |  |
+| gas\_limit | [Gas](https://substrate.dev/rustdocs/v1.0/srml_contract/trait.Trait.html#associatedtype.Gas) |  |
+| data | [Vec](https://doc.rust-lang.org/nightly/alloc/vec/struct.Vec.html)&lt;[u8](https://doc.rust-lang.org/nightly/std/primitive.u8.html)&gt; |  |
 
 Once the fields have been populated, the extrinsic must be signed using the sender private key. The signed extrinsic bytes can then be transmitted to the substrate network over JSON-RPC using the Contract module `call` function.
 
