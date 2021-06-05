@@ -208,3 +208,9 @@ Once the transaction fields have been populated, it must be signed using the sen
 
 To [read](../concepts/read.md) Mailchain messages for a specific address, transactions sent to that address need to be identified. The Algorand indexer natively supports an address index to identify all transactions sent to a specific address.
 
+### Rekeying
+
+Rekeying an account enables an Algorand account holder to maintain a static public address while dynamically rotating the authoritative private spending keys \(see [https://developer.algorand.org/docs/features/accounts/rekey/](https://developer.algorand.org/docs/features/accounts/rekey/) for more information\).
+
+If an account has been rekeyed, Mailchain will include the rekeyed account address in the reply-to field. Any replies to messages received from an authorised address for a rekeyed account will be sent to the initial rekeyed account.
+
