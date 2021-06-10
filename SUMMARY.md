@@ -5,7 +5,7 @@
 * [Installation](installation.md)
 * [Ethereum Instructions](ethereum-instructions/README.md)
   * [Setting Up](ethereum-instructions/setting-up.md)
-* [Algorand](algorand/README.md)
+* [Algorand Instructions](algorand/README.md)
   * [Setting Up](algorand/setting-up.md)
 * [Substrate Instructions](substrate-instructions/README.md)
   * [Setting Up](substrate-instructions/setting-up.md)

@@ -1,2 +1,2 @@
-# Algorand
+# Algorand Instructions
 
