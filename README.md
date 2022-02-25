@@ -1,4 +1,6 @@
 # Introduction
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmailchain%2Fdocs.mailchain.xyz.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmailchain%2Fdocs.mailchain.xyz?ref=badge_shield)
+
 
 [Mailchain](https://github.com/mailchain/mailchain) enables blockchain-based email-like messaging with plain or rich text and attachment capabilities. Using blockchain protocols and decentralized storage, Mailchain delivers a simple, secure, messaging experience.
 
@@ -10,3 +12,7 @@ The majority of blockchain protocols provide no standard way to handle messaging
 
 Visit [Getting Started](getting-started.md) to install the application and start sending and receiving messages.
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmailchain%2Fdocs.mailchain.xyz.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmailchain%2Fdocs.mailchain.xyz?ref=badge_large)
